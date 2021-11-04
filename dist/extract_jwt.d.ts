@@ -2,7 +2,7 @@ export function fromHeader(header_name: any): (request: any) => any;
 export function fromBodyField(field_name: any): (request: any) => any;
 export function fromUrlQueryParameter(param_name: any): (request: any) => any;
 export function fromAuthHeaderWithScheme(auth_scheme: any): (request: any) => string;
-export function fromAuthHeaderAsBearerToken(): (request: any) => [string, string];
+export function fromAuthHeaderAsBearerToken(): (request: any) => any;
 export function fromExtractors(extractors: any): (request: any) => any;
 /**
  * This extractor mimics the behavior of the v1.*.* extraction logic.
